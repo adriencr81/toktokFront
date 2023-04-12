@@ -1,0 +1,18 @@
+{ "/compte/listerLesUser" : { "secure" : "false" ,
+    "target" : "http://localhost:8888" } ,
+    "/compte/creerCompte" : { "secure" : "false" ,
+    "target" : "http://localhost:8888" } ,
+   "/meteoapi/all" : { "secure" : "false" ,
+      "target" : "http://localhost:5082" }  ,
+      "/pollutionapi/all" : { "secure" : "false" ,
+      "target" : "http://localhost:5082" } ,
+      "/compte/*": {
+        "target": "http://13.38.49.167:5000",
+        "secure": false,
+        "changeOrigin": true
+      } 
+
+}
+
+
+  
